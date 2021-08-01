@@ -15,20 +15,20 @@ function show(e){
         navigator.vibrate(2000)
             }else if(user.value.length < 5){
                 userp.textContent = 'username needs to be of 5 characters or more'
-                navigator.vibrate(2000)
+                navigator.vibrate(900)
             }else{userp.textContent = ' '}
 
             if(email.value.length < 12){
                 emailp.textContent = 'invalid email address'
-                navigator.vibrate(2000)
+                navigator.vibrate(900)
             }else if(email.value.indexOf('@') < 2){
                 emailp.textContent = 'inappropriate email address '
-                navigator.vibrate(2000)
+                navigator.vibrate(900)
             }else{emailp.textContent=''}
 
             if(pass.value.length < 8){
                 passp.textContent = 'password needs to be 8 characters or more'
-                navigator.vibrate(2000)
+                navigator.vibrate(900)
             }else{passp.textContent = ''
         }if(user.value.length >= 5 && email.value.length >= 12 && email.value.indexOf('@') >= 2 && pass.value.length >= 8){
             alert('sure to submit..pal..??')
